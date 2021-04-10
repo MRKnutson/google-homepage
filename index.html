@@ -13,15 +13,22 @@
         .logo {
             margin: auto;
         }
+        #search-box{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
     </style>
 <main>
     <div id="logo-box">
         <img class="logo" alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
     </div>
-    <form action="/search" method="GET" role="search">
-    <input type="text" placeholder="google search">
-    <button type="submit">Submit</button>
-    </form>
+    <div id="search-box">
+        <form action="/search" method="GET" role="search">
+        <input type="text" placeholder="google search">
+        <button type="submit">Submit</button>
+        </form>
+    </div>
 
 </main>
 </html>
