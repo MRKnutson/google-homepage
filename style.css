@@ -16,12 +16,34 @@ a{
 a:hover {
     text-decoration: underline;
 }
-.nav-bar a{
+.nav-bar1 a{
     color:black;
 }
-.nav-bar{
-    height: 50px;
+.nav-bar2 a{
     color: black;
+}
+.nav-bar1{
+    display: inline-block;
+    height: 50px;
+    width: 49%;
+    vertical-align: middle;
+}
+.nav-bar2{
+    display: inline-block;
+    height: 50pxpx;
+    width: 49%;
+    vertical-align: middle;
+}
+.sign-in{
+background-color: #4285f4;
+width: 80px;
+height: 30px;
+color:white;
+font-family: arial;
+font-size: 10pt;
+border-radius:5px;
+border: none;
+padding: 0px;
 }
 #logo-box{
     height: 92px;
