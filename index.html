@@ -1,85 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>Google Homepage</title>
-    </head>
-    <link 
-    rel="stylesheet"
-    href="http://fonts.googlapis.com/icon?family=Material+Icons+Outlined"
-    />
-    <style>
-       
-        ul{
-            list-style-type: none;
-            margin: 0;
-            padding: 0;
-        }
-        li{
-            float: left;
-            font-size: 14px;
-            font-family: arial;
-        }
-        a{
-            display: block;
-            padding: 8px;
-            color: black;
-            text-decoration: none;
-        }
-        a:hover {
-            text-decoration: underline;
-        }
-        #nav-bar{
-            height: 50px;
-        }
-        #logo-box{
-            height: 92px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 50px;
-        }
-        .logo {
-            margin: auto;
-        }
-        #search-box{
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            padding: 20px;
-        }
-        #search {
-            width: 450px;
-            height: 40px;
-            border-radius: 15px;
-            border: 0.5px solid rgb(130, 130, 130);
-        }
-        .button1{
-            grid-area: button1;
-            height: 30px;
-            border-radius: 5px;
-            border: 0.5px solid #dadce0;
-            background-color: #f8f9fa;
-            font-size: 14px;
-            font-family: arial,sans-serif;
-        }
-        .button2{
-            grid-area: button2;
-            height: 30px;
-            border-radius: 5px;
-            border: 0.5px solid #dadce0;
-            background-color: #f8f9fa;
-            font-size: 14px;
-            font-family: arial,sans-serif;
-        }
-        #button-box{
-            padding: 18px;
-            display: grid;
-            grid-template-columns:1fr 140px 140px 1fr;
-            grid-gap: 10px;
-            grid-template-areas:
-            ". button1 button2 .";
-        }
-    </style>
+<head>
+    <title>Google Homepage</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="http://fonts.googlapis.com/icon?family=Material+Icons+Outlined">
+</head>
 <main>
     <div id="nav-bar">
     <ul>
@@ -103,6 +28,5 @@
         </div>
         </form>
     </div>
-
 </main>
 </html>
