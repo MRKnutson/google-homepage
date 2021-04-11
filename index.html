@@ -3,12 +3,40 @@
     <head>
         <title>Google Homepage</title>
     </head>
+    <link 
+    rel="stylesheet"
+    href="http://fonts.googlapis.com/icon?family=Material+Icons+Outlined"
+    />
     <style>
+       
+        ul{
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+        li{
+            float: left;
+            font-size: 14px;
+            font-family: arial;
+        }
+        a{
+            display: block;
+            padding: 8px;
+            color: black;
+            text-decoration: none;
+        }
+        a:hover {
+            text-decoration: underline;
+        }
+        #nav-bar{
+            height: 50px;
+        }
         #logo-box{
             height: 92px;
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 50px;
         }
         .logo {
             margin: auto;
@@ -17,16 +45,62 @@
             display: flex;
             flex-direction: column;
             align-items: center;
+            padding: 20px;
+        }
+        #search {
+            width: 450px;
+            height: 40px;
+            border-radius: 15px;
+            border: 0.5px solid rgb(130, 130, 130);
+        }
+        .button1{
+            grid-area: button1;
+            height: 30px;
+            border-radius: 5px;
+            border: 0.5px solid #dadce0;
+            background-color: #f8f9fa;
+            font-size: 14px;
+            font-family: arial,sans-serif;
+        }
+        .button2{
+            grid-area: button2;
+            height: 30px;
+            border-radius: 5px;
+            border: 0.5px solid #dadce0;
+            background-color: #f8f9fa;
+            font-size: 14px;
+            font-family: arial,sans-serif;
+        }
+        #button-box{
+            padding: 18px;
+            display: grid;
+            grid-template-columns:1fr 140px 140px 1fr;
+            grid-gap: 10px;
+            grid-template-areas:
+            ". button1 button2 .";
         }
     </style>
 <main>
+    <div id="nav-bar">
+    <ul>
+        <li><a href="default.asp">About</a></li>
+        <li><a href="default.asp">Store</a></li>
+        <li><a href="gmail.com">Gmail</a></li>
+        <li><a href="gmail.com">Images</a></li>
+        <li style="float:right"><a href="gmail.com">drop</a></li>
+        <li style="float:right"><a href="gmail.com">profile</a></li>
+    </ul>
+    </div>
     <div id="logo-box">
         <img class="logo" alt="Google" height="92" src="https://www.google.com/images/branding/googlelogo/2x/googlelogo_color_272x92dp.png">
     </div>
-    <div id="search-box">
+    <div id="search-box" class="input-icons">
         <form action="/search" method="GET" role="search">
-        <input type="text" placeholder="google search">
-        <button type="submit">Submit</button>
+        <input id="search" type="text" placeholder="Google Search">
+        <div id="button-box">
+            <button class=button1 type="submit">Google Search</button>
+            <button class=button2 type="submit">I'm Feeling Lucky</button>
+        </div>
         </form>
     </div>
 
